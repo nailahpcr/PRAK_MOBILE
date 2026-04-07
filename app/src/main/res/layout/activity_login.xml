@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back"
+        android:textSize="24sp"
+        android:textColor="@color/text_black"
+        android:fontFamily="@font/leaguespartan_bold"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginVertical="32dp"
+        android:src="@drawable/logo" /> <EditText
+    android:id="@+id/inputNoTujuan"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:hint="Enter your Email / Username"
+    android:paddingHorizontal="20dp"
+    android:backgroundTint="@color/white"
+    android:background="@android:drawable/editbox_background_normal"
+    android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password ?"
+        android:textColor="@color/primary_teal"
+        android:layout_marginVertical="20dp" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary_teal"
+        app:cornerRadius="15dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

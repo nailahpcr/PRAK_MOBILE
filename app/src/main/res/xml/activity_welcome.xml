@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgIllustration"
+        android:layout_centerHorizontal="true"
+        android:text="Gets things with TODs"
+        android:textSize="22sp"
+        android:fontFamily="@font/leaguespartan_bold"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Selamat datang kembali!\nKelola tugasmu dengan mudah."
+        android:layout_marginTop="12dp"
+        android:textColor="#757575" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Get Started"
+        android:backgroundTint="@color/primary_teal"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

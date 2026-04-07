@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">nailah-cookie</string>
+    <string name="app_name">Sapphire</string>
+
+    <string name="title_welcome_back">Welcome back</string>
+    <string name="hint_username">Enter your Username / Email</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="btn_login_text">Login</string>
+    <string name="forgot_pass">Forget password ?</string>
+    <string name="footer_signup">Don’t have an account ? Sign Up</string>
+
+    <string name="title_get_started">Gets things with TODs</string>
+    <string name="desc_tipsy">Sapphire rencana harianmu dengan lebih terstruktur</string>
+    <string name="btn_get_started">Get Started</string>
+
+    <string name="error_username">Username / Email wajib diisi</string>
+    <string name="error_password">Password wajib diisi</string>
+    <string name="toast_success">Login berhasil: %1$s</string>
+    <string name="welcome_user_msg">Halo %1$s,\nSelamat datang kembali!</string>
 </resources>

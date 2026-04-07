@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/leaguespartan_bold"
+        android:text="@string/title_welcome_back"
+        android:textColor="@color/text_black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginVertical="32dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/inputNoTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/white"
+        android:hint="@string/hint_username"
+        android:paddingHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/white"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="@string/forgot_pass"
+        android:textColor="@color/primary_teal" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/primary_teal"
+        android:text="@string/btn_login_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/footer_signup"
+        android:textColor="@color/text_black" />
+
+</LinearLayout>
