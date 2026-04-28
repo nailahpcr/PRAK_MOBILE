@@ -1,4 +1,44 @@
 <resources>
-    <string name="app_name">Dora Apps</string>
-    <string name="judul">Dora Apps</string>
+    <string name="app_name">Bansos</string>
+    <string name="judul">Bansos - Cek Bantuan Sosial</string>
+
+    <!-- Splash & Login -->
+    <string name="splash_desc">Portal Informasi &amp; Penyaluran Bantuan Sosial</string>
+    <string name="login_title">Selamat Datang di Bansos</string>
+    <string name="login_desc">Silakan masuk untuk mengecek status bantuan Anda</string>
+    <string name="btn_login">MASUK SISTEM</string>
+
+    <!-- Home / Dashboard -->
+    <string name="menu_home">Beranda</string>
+    <string name="menu_web">Cek Bansos</string>
+    <string name="menu_profile">Profil</string>
+
+    <string name="welcome_user">Halo, Selamat Pagi</string>
+    <string name="user_name">Penerima Manfaat</string>
+    <string name="status_label">Status Bantuan Sosial</string>
+    <string name="status_active_text">AKTIF / TERDAFTAR</string>
+    <string name="program_info">Program: PKH &amp; BPNT 2024</string>
+
+    <string name="layanan_utama">Layanan Utama</string>
+    <string name="menu_cek_data">Cek Data</string>
+    <string name="menu_panduan">Panduan</string>
+    <string name="menu_pengaduan">Pengaduan</string>
+    <string name="menu_lokasi">Lokasi Pos</string>
+
+    <string name="info_banner_text">Informasi Pencairan Tahap 2\nCek Jadwal di Sini</string>
+
+    <!-- News Content -->
+    <string name="news_category">INFO BANSOS</string>
+    <string name="news_title">Jadwal Pencairan Bansos Tahap 2 Tahun 2024</string>
+    <string name="news_author">Humas Kemensos</string>
+    <string name="news_date">28 April 2024</string>
+    <string name="news_content">Pemerintah kembali menyalurkan Bantuan Sosial (Bansos) tahap 2 bagi masyarakat yang terdaftar dalam DTKS. Pastikan data NIK Anda valid dan sudah melakukan padan data di Dukcapil setempat.\n\nBantuan yang akan cair meliputi PKH dan Sembako. Penyaluran dilakukan melalui Bank Himbara dan Kantor Pos di wilayah masing-masing.</string>
+
+    <!-- Strings for compatibility with previous tasks -->
+    <string name="news_read_more">Cek Detail Pencairan</string>
+    <string name="news_trending_title">Informasi Terkini</string>
+    <string name="news_related_1">Cara Daftar DTKS Secara Online</string>
+    <string name="news_related_1_time">Baru saja</string>
+    <string name="news_related_2">Syarat Penerima Bansos Lansia</string>
+    <string name="news_related_2_time">10 menit yang lalu</string>
 </resources>

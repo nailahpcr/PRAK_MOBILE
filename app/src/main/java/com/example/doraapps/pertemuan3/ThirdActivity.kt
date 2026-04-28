@@ -1,11 +1,8 @@
-package com.example.doraapps.pertemuan_3
+package com.example.doraapps.pertemuan3
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.doraapps.R
 import com.example.doraapps.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {

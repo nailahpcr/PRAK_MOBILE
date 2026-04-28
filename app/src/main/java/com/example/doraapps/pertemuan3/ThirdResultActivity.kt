@@ -1,4 +1,4 @@
-package com.example.doraapps.pertemuan_3
+package com.example.doraapps.pertemuan3
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
