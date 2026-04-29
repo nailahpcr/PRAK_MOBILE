@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.HomeFragment">
+    android:background="@color/icon_pink"
+    tools:context=".Home.pertemuan7.DuaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ini fragment Home" />
+        android:text="ini fragment 2"
+        android:textSize="40sp"/>
 
 </FrameLayout>

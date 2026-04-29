@@ -1,4 +1,4 @@
-package com.example.doraapps.pertemuan6
+package com.example.doraapps.Home.pertemuan6
 
 import android.content.Intent
 import android.os.Bundle

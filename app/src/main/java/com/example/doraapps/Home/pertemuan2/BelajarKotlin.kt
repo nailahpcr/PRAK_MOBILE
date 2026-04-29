@@ -1,4 +1,4 @@
-package com.example.doraapps.pertemuan2
+package com.example.doraapps.Home.pertemuan2
 
     fun main(){
         println("Hai rekan-rekan...")

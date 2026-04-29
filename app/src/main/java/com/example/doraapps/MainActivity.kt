@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.doraapps.databinding.ActivityMainBinding
+import com.example.doraapps.Home.pertemuan7.SevenActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val sharedPref = getSharedPreferences("user_pref", Context.MODE_PRIVATE)
-        // 1. Klik tombol untuk ke FourthActivity dengan membawa data
+        // 1. Klik tombol untuk ke FourthActivity dengan membawa da ta
 //        binding.btnToFourth.setOnClickListener {
 //            val intent = Intent(this, FourthActivity::class.java)
 //
@@ -48,6 +49,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 .setNegativeButton("Tidak", null)
                 .show()
+        }
+       binding.btnPertemuan7.setOnClickListener {
+            val intent = Intent(this, SevenActivity::class.java)
+            startActivity(intent)
         }
     }
 }

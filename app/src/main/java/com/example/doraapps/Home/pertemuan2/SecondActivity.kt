@@ -1,4 +1,4 @@
-package com.example.doraapps.pertemuan2
+package com.example.doraapps.Home.pertemuan2
 
 import android.os.Bundle
 import android.util.Log

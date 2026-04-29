@@ -75,12 +75,16 @@
                 android:id="@+id/btnToFourth"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:text="Buka Halaman Keempat"
+                android:text="Buka pertemuan 4"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                app:cornerRadius="12dp"
                 app:backgroundTint="@color/primary_blue"
                 app:elevation="4dp" />
+
+            <Button
+                android:id="@+id/btn_pertemuan7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buka Pertemuan 7" />
 
             <Button
                 android:id="@+id/btnLogout"
