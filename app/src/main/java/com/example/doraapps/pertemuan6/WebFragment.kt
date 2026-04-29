@@ -56,7 +56,7 @@ class WebFragment : Fragment() {
             }
             
             // Memuat link website Anda
-            loadUrl("https://nailah-sic.alwaysdata.net/")
+            loadUrl("https://nailah-sic.alwaysdata.net")
         }
     }
 
