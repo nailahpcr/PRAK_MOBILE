@@ -1,76 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/background_light"
-    android:padding="20dp">
+    android:background="#F0F4F8"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_profile"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/text_main"
-        android:layout_marginBottom="24dp"/>
-
-    <com.google.android.material.card.MaterialCardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:cardBackgroundColor="@color/white">
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1E3A8A"
+            app:title="Profil Mahasiswa"
+            app:titleTextColor="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#1E3A8A" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="24dp">
+            android:layout_marginTop="-60dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:cardCornerRadius="50dp"
-                app:cardElevation="0dp"
-                android:layout_marginBottom="16dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@android:color/white">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@android:drawable/ic_menu_myplaces"
-                    android:padding="20dp"
-                    android:background="#F5F5F5"
-                    app:tint="@color/primary_blue" />
-            </com.google.android.material.card.MaterialCardView>
+                    android:src="@drawable/dora"
+                    android:scaleType="centerCrop"
+                    android:padding="4dp" />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/user_name"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/text_main" />
+                android:layout_marginTop="16dp"
+                android:text="Naila Haura Disanova"
+                android:textColor="#0F172A"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3271XXXXXXXXXXXX"
                 android:layout_marginTop="4dp"
-                android:textColor="@color/text_secondary" />
+                android:text="Sistem Informasi • 4 SI A"
+                android:textColor="#3B82F6"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="#DBEAFE"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp" />
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnLogout"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Keluar Aplikasi"
-        android:textColor="@color/secondary_red"
-        app:icon="@android:drawable/ic_lock_power_off"
-        app:iconTint="@color/secondary_red" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:strokeWidth="0dp">
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Kontak &amp; Sosial"
+                    android:textColor="#1E3A8A"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                    <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="📧" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Kampus" android:textColor="#64748B" android:textSize="12sp" />
+                        <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="naila24si@mahasiswa.pcr.ac.id" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                    <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="💼" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LinkedIn" android:textColor="#64748B" android:textSize="12sp" />
+                        <TextView android:id="@+id/tvLinkedIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="linkedin.com/in/naila-haura" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp">
+                    <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="🐙" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GitHub" android:textColor="#64748B" android:textSize="12sp" />
+                        <TextView android:id="@+id/tvGithub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="github.com/naila24si" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="📸" android:textSize="18sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram" android:textColor="#64748B" android:textSize="12sp" />
+                        <TextView android:id="@+id/tvInstagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@nailahauraa" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:text="Keluar Akun (Logout)"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:backgroundTint="#EF4444"
+            app:elevation="2dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
