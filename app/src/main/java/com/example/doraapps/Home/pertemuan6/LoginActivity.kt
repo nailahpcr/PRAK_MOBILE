@@ -16,20 +16,54 @@ class LoginActivity : AppCompatActivity() {
 
         val sessionManager = SessionManager(this)
 
-        binding.btnLogin.setOnClickListener {
-            val email = binding.etEmail.text.toString()
-            val password = binding.etPassword.text.toString()
+        // Cek status login
+        if (sessionManager.isLoggedIn()) {
+            startActivity(Intent(this, MainActivityP6::class.java))
+            finish()
+        }
 
-            // Dummy Login Logic
-            if (email == "admin@mail.com" && password == "admin123") {
+        binding.btnLogin.setOnClickListener {
+            val username = binding.etUsername.text.toString().trim()
+            val password = binding.etPassword.text.toString().trim()
+
+            if (username.isEmpty()) {
+                binding.tilUsername.error = "Username tidak boleh kosong"
+                return@setOnClickListener
+            } else {
+                binding.tilUsername.error = null
+            }
+
+            if (password.isEmpty()) {
+                binding.tilPassword.error = "Password tidak boleh kosong"
+                return@setOnClickListener
+            } else {
+                binding.tilPassword.error = null
+            }
+
+            val savedUsername = sessionManager.getUsername()
+            val savedPassword = sessionManager.getPassword()
+
+            // Logic Login Sesuai Ketentuan:
+            // 1. Jika username == password
+            // 2. Jika username == savedUsername && password == savedPassword
+            val isSameUserPass = username == password
+            val isRegisteredUser = !savedUsername.isNullOrEmpty() && username == savedUsername && password == savedPassword
+
+            if (isSameUserPass || isRegisteredUser) {
                 sessionManager.saveLoginStatus(true)
                 Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
                 
                 startActivity(Intent(this, MainActivityP6::class.java))
                 finish()
             } else {
-                Toast.makeText(this, "Email atau Password Salah", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Username atau Password Salah", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Navigasi ke halaman registrasi
+        binding.tvRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 }

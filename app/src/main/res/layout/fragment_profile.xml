@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Naila Haura Disanova"
+                android:text="Nailah Houra Disanova"
                 android:textColor="#0F172A"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Sistem Informasi • 4 SI A"
+                android:text="Sistem Informasi • 2 SI C"
                 android:textColor="#3B82F6"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -97,7 +97,7 @@
                     <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="📧" android:textSize="18sp" />
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Kampus" android:textColor="#64748B" android:textSize="12sp" />
-                        <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="naila24si@mahasiswa.pcr.ac.id" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nailah24si@mahasiswa.pcr.ac.id" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -105,7 +105,7 @@
                     <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="💼" android:textSize="18sp" />
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LinkedIn" android:textColor="#64748B" android:textSize="12sp" />
-                        <TextView android:id="@+id/tvLinkedIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="linkedin.com/in/naila-haura" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvLinkedIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="linkedin.com/in/nailah-houra" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -113,7 +113,7 @@
                     <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="🐙" android:textSize="18sp" />
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GitHub" android:textColor="#64748B" android:textSize="12sp" />
-                        <TextView android:id="@+id/tvGithub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="github.com/naila24si" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvGithub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="github.com/nailah24si" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -121,7 +121,7 @@
                     <TextView android:layout_width="36dp" android:layout_height="36dp" android:background="#F1F5F9" android:gravity="center" android:text="📸" android:textSize="18sp" />
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram" android:textColor="#64748B" android:textSize="12sp" />
-                        <TextView android:id="@+id/tvInstagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@nailahauraa" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tvInstagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@nailahoura" android:textColor="#2563EB" android:textSize="14sp" android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 

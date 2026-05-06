@@ -33,6 +33,9 @@
             android:name=".Home.pertemuan6.LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".Home.pertemuan6.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.pertemuan6.MainActivityP6"
             android:exported="false" /> <!-- Pertemuan 5 -->
         <activity
@@ -41,8 +44,7 @@
         <activity
             android:name=".Home.pertemuan5.FifthActivity"
             android:exported="true" /> <!-- Pertemuan 4 -->
-        <activity
-            android:name=".Home.pertemuan4.FourthActivity"
+        <activity android:name=".Home.pertemuan4.FourthActivity"
             android:exported="false" /> <!-- Pertemuan 3 -->
         <activity
             android:name=".Home.pertemuan3.ThirdActivity"

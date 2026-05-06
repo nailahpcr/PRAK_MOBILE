@@ -15,6 +15,7 @@ class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +27,7 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        sessionManager = SessionManager(requireContext())
 
         setupToolbar()
         setupClickListener()
@@ -64,16 +66,13 @@ class ProfileFragment : Fragment() {
 
         // --- TOMBOL LOGOUT ---
         binding.btnLogout.setOnClickListener {
-            /* Jika kamu punya class SessionManager atau SharedPreferences untuk
-               menghapus data login, panggil di sini sebelum pindah halaman.
-               Contoh: SessionManager(requireContext()).logout()
-            */
+            // Menghapus status login di SessionManager
+            sessionManager.logout()
 
-            // Pindah ke halaman Login (Pastikan nama LoginActivity sesuai dengan project kamu)
+            // Pindah ke halaman Login
             val intent = Intent(requireContext(), LoginActivity::class.java)
 
             // Flags ini berfungsi untuk menghapus tumpukan history halaman sebelumnya
-            // Jadi setelah logout, user tidak bisa menekan tombol "Back" untuk masuk lagi
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
 
