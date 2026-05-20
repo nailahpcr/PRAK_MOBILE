@@ -49,6 +49,6 @@ class MessageFragment : Fragment() {
         val adapter = MessageAdapter(context = requireContext(), Messages = messageList)
 
         // Hubungkan adapter ke ListView (atau RecyclerView)
-        binding.listMessageItem.adapter = adapter
+        binding.listMessageItems.adapter = adapter
     }
 }
