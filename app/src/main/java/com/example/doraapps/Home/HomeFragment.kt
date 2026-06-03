@@ -1,18 +1,25 @@
-package com.example.doraapps.Home.pertemuan10
+package com.example.doraapps.Home
+
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.edit
 import androidx.fragment.app.Fragment
+import com.example.doraapps.AuthActivity
 import com.example.doraapps.databinding.FragmentHomeBinding
 import com.example.doraapps.Home.pertemuan10.TenthActivity
 import com.example.doraapps.Home.pertemuan2.SecondActivity
 import com.example.doraapps.Home.pertemuan3.ThirdActivity
 import com.example.doraapps.Home.pertemuan4.FourthActivity
+import com.example.doraapps.Home.pertemuan5.FifthActivity
+import com.example.doraapps.Home.pertemuan6.MainActivityP6
+import com.example.doraapps.Home.pertemuan7.SevenActivity
 import com.example.doraapps.Home.pertemuan9.NinthActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -21,66 +28,67 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
-        (requireActivity() as AppCompatActivity).supportActionBar?.apply {
-            title = "Home"
-        }
         val sharedPref = requireContext().getSharedPreferences("session_user", MODE_PRIVATE)
 
-        binding.btnPertemuan2.setOnClickListener {
-            startActivity(Intent(requireContext(), SecondActivity::class.java ))
+        // Navigasi Button Pertemuan
+        binding.btnP2.setOnClickListener {
+            startActivity(Intent(requireContext(), SecondActivity::class.java))
         }
 
-        binding.btnPertemuan3.setOnClickListener {
+        binding.btnP3.setOnClickListener {
             startActivity(Intent(requireContext(), ThirdActivity::class.java))
         }
 
-        binding.btnPertemuan4.setOnClickListener {
-            startActivity(Intent(/* packageContext = */ requireContext(), /* cls = */ FourthActivity::class.java))
+        binding.btnP4.setOnClickListener {
+            startActivity(Intent(requireContext(), FourthActivity::class.java))
         }
 
-        binding.btnPertemuan7.setOnClickListener {
-            startActivity(Intent(requireContext(), SeventhActivity::class.java))
+        binding.btnP5.setOnClickListener {
+            startActivity(Intent(requireContext(), FifthActivity::class.java))
         }
 
-        binding.btnPertemuan9.setOnClickListener {
+        binding.btnP6.setOnClickListener {
+            startActivity(Intent(requireContext(), MainActivityP6::class.java))
+        }
+
+        binding.btnP7.setOnClickListener {
+            startActivity(Intent(requireContext(), SevenActivity::class.java))
+        }
+
+        binding.btnP9.setOnClickListener {
             startActivity(Intent(requireContext(), NinthActivity::class.java))
         }
-        binding.btnPertemuan10.setOnClickListener {
+
+        binding.btnP10.setOnClickListener {
             startActivity(Intent(requireContext(), TenthActivity::class.java))
         }
 
         // Fitur Logout
-        binding.btnLogout.setOnClickListener { //pakai binding untuk lebih mempermudah pemanggilan id
+        binding.btnLogout.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
                 .setTitle("Logout")
                 .setMessage("Apakah Anda yakin ingin Logout?")
                 .setPositiveButton("Ya") { dialog, _ ->
-                    sharedPref.edit {
-                        clear()
-                    }
-                    dialog.dismiss()
-
-                    val intent = Intent(requireContext(), AuthActivity::class.java)
-                    startActivity(intent)
+                    sharedPref.edit { clear() }
+                    startActivity(Intent(requireContext(), AuthActivity::class.java))
                     requireActivity().finish()
-
-                    dialog.dismiss()
-                    Log.e("Info Dialog","Anda memilih Ya!")
+                    Log.d("HomeFragment", "User logged out")
                 }
-                .setNegativeButton("Batal") { dialog, _ ->
-                    dialog.dismiss()
-                    Log.e("Info Dialog","Anda memilih Tidak!")
-                }
+                .setNegativeButton("Batal") { dialog, _ -> dialog.dismiss() }
                 .show()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

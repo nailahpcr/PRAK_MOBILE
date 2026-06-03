@@ -1,21 +1,21 @@
-package com.example.doraapps.Home.pertemuan6
+package com.example.doraapps.Message.tutorial
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.doraapps.databinding.FragmentProfileBinding
+import com.example.doraapps.databinding.FragmentTutorial2Binding
 
-class ProfileFragment : Fragment() {
-    private var _binding: FragmentProfileBinding? = null
+class Tutorial2Fragment : Fragment() {
+    private var _binding: FragmentTutorial2Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentTutorial2Binding.inflate(inflater, container, false)
         return binding.root
     }
 
