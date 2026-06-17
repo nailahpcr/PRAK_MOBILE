@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import com.example.doraapps.AuthActivity
 import com.example.doraapps.databinding.FragmentHomeBinding
 import com.example.doraapps.Home.pertemuan10.TenthActivity
+import com.example.doraapps.Home.pertemuan13.ThirteenthActivity
 import com.example.doraapps.Home.pertemuan2.SecondActivity
 import com.example.doraapps.Home.pertemuan3.ThirdActivity
 import com.example.doraapps.Home.pertemuan4.FourthActivity
@@ -69,6 +70,10 @@ class HomeFragment : Fragment() {
 
         binding.btnP10.setOnClickListener {
             startActivity(Intent(requireContext(), TenthActivity::class.java))
+        }
+
+        binding.btnThirteenth.setOnClickListener {
+            startActivity(Intent(requireContext(), ThirteenthActivity::class.java))
         }
 
         // Fitur Logout

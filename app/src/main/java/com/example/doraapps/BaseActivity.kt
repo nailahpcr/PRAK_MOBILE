@@ -1,4 +1,4 @@
-package com.example.doraappsimport
+package com.example.doraapps
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import com.example.doraapps.Home.HomeFragment // Tambahkan import ini
+import com.example.doraapps.Home.HomeFragment
 import com.example.doraapps.Message.MessageFragment
 import com.example.doraapps.More.MoreFragment
 import com.example.doraapps.databinding.ActivityBaseBinding
